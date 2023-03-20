@@ -47,8 +47,8 @@ http://moodydev.io
 
 body {
   font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  font-size: 1em;
-  font-weight: 300;
+  font-size: 0.7em;
+  font-weight: 700;
   line-height: 1.5;
   color: var(--text-color);
   background: var(--bg-color);
@@ -73,7 +73,7 @@ header #logo .icon {
   padding-right: 0.25em;
 }
 
-main {
+.App {
   display: block;
   margin: 0 auto;
   margin-top: 5em;
@@ -164,8 +164,8 @@ main {
 
 .calendar .body .cell {
   position: relative;
-  height: 5em;
-  border-right: 1px solid var(--border-color);
+  height: 3em;
+  border-right: 2px solid var(--border-color);
   overflow: hidden;
   cursor: pointer;
   background: var(--neutral-color);
@@ -178,7 +178,9 @@ main {
 }
 
 .calendar .body .selected {
-  border-left: 10px solid transparent;
+  border-left: 2px solid transparent;
+  border-bottom: 1px solid transparent;
+  border-top: 1px solid transparent;
   border-image: linear-gradient(45deg, #1a8fff 0%, #53cbf1 40%);
   border-image-slice: 1;
 }
@@ -228,8 +230,8 @@ main {
   transition: 0.5s ease-in;
 }
 
-.calendar .body .col {
+/* .calendar .body .col {
   flex-grow: 0;
   flex-basis: calc(100% / 7);
   width: calc(100% / 7);
-}
+} */
